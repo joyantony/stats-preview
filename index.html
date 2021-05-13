@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Stats preview card component</title>
 
@@ -16,18 +19,45 @@
 </head>
 <body>
 
-  Get insights that help your business grow.
+  <div class="container">
+    <div class="main-wrapper">
+      <div class="main-img">
+        <div class="img-overlay"></div>
+        <!-- <img src="./images/image-header-mobile.jpg" alt="Hero image" class="main-img"> -->
+      </div>
+      <div class="card">
+        <h1 class="card-heading">Get <span class="card-heading-color">insights</span> that help your business grow.</h1>
+      <div class="card-body">
+        <p class="card-body-content">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+          experience, and overall efficiency.
+        </p>
+      </div>
+      <div class="card-showcase">
+        <ul>
+          <li class="showcase-item">10k+ <span class="showcase-item-detail">
+            companies
+          </span></li>
+          <li class="showcase-item">314 <span class="showcase-item-detail">templates</span></li>
+          <li class="showcase-item">12M+ <span class="showcase-item-detail">queries</span></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Get insights that help your business grow.
 
   Discover the benefits of data analytics and make better decisions regarding revenue, customer 
   experience, and overall efficiency.
 
   10k+ companies
   314 templates
-  12m+ queries
+  12m+ queries -->
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Joy Antony</a>.
+  </div> -->
 </body>
 </html>

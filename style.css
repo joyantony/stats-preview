@@ -1,0 +1,123 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background:  hsl(233, 47%, 7%);
+    font-family: "Inter", sans-serif;
+    color:  hsl(0, 0%, 100%);
+    font-size: 15px;
+}
+
+.container{
+    padding: 5.375rem 1.625rem;
+}
+
+.main-img{
+    background: url(./images/image-header-mobile.jpg) no-repeat bottom/cover;
+    width: 100%;
+    height: 280px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    
+}
+
+.img-overlay{
+    width: 100%;
+    height: 100%;
+    background: hsl(277, 64%, 61%, 0.7) ;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card{
+    background: hsl(244, 38%, 16%);
+    text-align: center;
+    padding: 40px 0 20px 0;
+    border-radius: 0 0 10px 10px;
+    
+}
+
+.card-heading{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.card-heading-color{
+    color: hsl(277, 64%, 61%);
+}
+
+.card-body-content{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6rem;
+}
+
+.card-showcase ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+.showcase-item{
+    list-style-type: none; 
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card-showcase .showcase-item-detail{
+    display: block;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-wrapper{
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+    .main-img{
+        background: url(./images/image-header-desktop.jpg) no-repeat bottom/cover;
+        height: auto;
+        border-radius: 0 10px 10px 0;
+        flex-basis: 50%;
+    }
+
+    .img-overlay{
+        border-radius: 0;
+    }
+
+    .card{
+        border-radius: 10px 0 0 10px;
+        padding: 80px 70px;
+        min-width: 375px;
+        flex-basis: 50%;
+    }
+
+    .card-showcase{
+        padding-top: 75px;
+    }
+
+    .card-showcase ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card-body{
+        padding-top: 25px;
+    }
+}
